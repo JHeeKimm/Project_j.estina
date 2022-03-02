@@ -1,0 +1,497 @@
+/* 제이에스티나 서브 join css */
+
+/*
+font-family: 'IBMPlexSansKR-Regular';
+
+*/
+
+/*
+사용컬러
+#fffafa
+
+#fddfd5
+#ffb2b8
+
+#242423
+#545453
+#828281
+
+#2e3192
+*/
+
+/* 공통 */
+.inner{
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    border: 0px solid blue;
+}
+
+.clearfix:after{
+    display: block;
+    content:"";
+    clear: both;
+}
+
+/* 기본정보 */
+.join_wrap{
+    color: #242423;
+    letter-spacing: -0.01em;
+    width: 744px;
+    margin: 0 auto;
+}
+
+.join_wrap h2{
+    font-size: 36px;
+    font-family: 'IBMPlexSansKR-SemiBold';
+    text-align: center;
+    color: #545453;
+}
+
+.join_wrap form{
+    margin-bottom: 105px;
+}
+
+.join_wrap form fieldset legend{
+    font-size: 16px;
+    font-family: 'IBMPlexSansKR-SemiBold';
+    padding-left: 11px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #545453;
+    width: 100%;
+}
+
+.join_wrap form fieldset.agree legend{
+    font-size: 24px;
+    font-family: 'IBMPlexSansKR-Medium';
+    text-align: center;
+    padding: 0 0 19px 0 ;
+}
+
+.join_wrap div{
+    padding: 12px 15px;
+    height: 59px;
+    line-height: 34px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.join_wrap div.address{
+    height: auto;
+}
+
+.join_wrap div label{
+    float: left;
+    width: 161px;
+    font-size: 14px;
+    font-family: 'IBMPlexSansKR-Medium';
+}
+
+.join_wrap div input{
+    height: 34px;
+    border: 1px solid #c2c2c2;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+.join_wrap div .input160{
+    width: 160px;
+}
+
+.join_wrap div span.pw_caution{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+
+.join_wrap div .address_box{
+    float: left;
+}
+
+.join_wrap div .address_box input{
+    margin-bottom: 12px;
+}
+
+.join_wrap div .address_box #user_addr{
+    width: 124px;
+}
+
+.join_wrap div .address_box #user_addr2, #addrDetail{
+    width: 519px;
+}
+
+.join_wrap div.phone_num div.phoneBox{
+    border-bottom:0;
+    padding:0;
+    height: auto;
+    line-height: inherit;
+}
+
+
+.join_wrap div.phone_num #phoneN1{
+    height: 34px;
+    border: 1px solid #c2c2c2;
+}
+
+.join_wrap div.phone_num #phoneN1, #phoneN2, #phoneN3{
+    width: 104px;
+}
+
+.join_wrap div.phone_num span{
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    border: 1px solid #545453;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.join_wrap div #user_email{
+    width: 270px;
+}
+
+.join_wrap div a{
+    display: inline-block;
+    color:#242423;
+    font-size: 14px;
+    font-family: 'IBMPlexSansKR-Medium';
+    width: 83px;
+    height: 34px;
+    line-height: 32px;
+    border: 1px solid #c2c2c2;
+    text-align: center;
+    margin-left: 20px;
+    background: #fcf3f3;
+}
+
+/* 추가정보 */
+.join_wrap .add_info div #birthY{
+    width: 104px;
+}
+
+.join_wrap .add_info div #birthM, #birthD{
+    width: 79px;
+}
+
+.join_wrap .add_info div i{
+    font-size: 14px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.join_wrap .add_info div span{
+    display: inline-block;
+    line-height: 34px;
+}
+
+.join_wrap .add_info div span label{
+    width: auto;
+    float: none;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.join_wrap .add_info div span input{
+    border: 0;
+}
+
+.join_wrap .add_info div span input:first-child{
+    margin-left: 28px;
+}
+
+
+/* 약관동의 */
+.agree > h3{
+    padding: 12px 14px;
+    height: 59px;
+    line-height: 34px;
+    border-bottom: 1px solid #c2c2c2;
+    font-size: 16px;
+    font-family: 'IBMPlexSansKR-Medium';
+}
+
+.agree ul{
+    padding: 21px 25px;
+    border-bottom: 1px solid #c2c2c2;
+    font-size: 14px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.agree ul li{
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.agree ul li.agree_select{
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.agree ul li span.view_policy{
+    background: url(../img/view_policy.png) no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: absolute;
+    right: 28px;
+    top:0;
+}
+
+.agree ul li span.close_policy{
+    background: url(../img/close_policy.png) no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: absolute;
+    right: 28px;
+    top:3px;
+}
+
+.agree ul li .policy{
+    padding: 20px 15px;
+    line-height: 1.5;
+    background: #f5f5f5;
+    margin-top:13px;
+    height: 185px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+}
+
+
+
+/* 가입 버튼 */
+.join_btn{
+    padding-top: 75px;
+    text-align: center;
+}
+.join_btn button{
+    width: 124px;
+    height: 47px;
+    line-height: 45px;
+    border-radius: 2px;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'IBMPlexSansKR-SemiBold';
+    border: 1px solid #ffb2b8; 
+}
+
+.join_btn button.btn1{
+    background: #ffb2b8;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.join_btn button.btn1:hover{
+    background: #fff;
+    color: #ffb2b8;
+}
+
+.join_btn button.btn2{
+    background: #fff;
+    color: #ffb2b8;
+}
+
+.join_btn button.btn2:hover{
+    background: #ffb2b8;
+    color: #fff;
+}
+
+
+
+
+
+
+/* 인풋 타입 */
+input[type="radio"]{
+    background: url(../img/radio_normal.png) no-repeat;
+    width: 22px;
+    height: 22px !important;
+    background-size: contain;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked{
+    background: url(../img/radio_on.png) no-repeat;
+}
+
+
+input[type="checkbox"]{
+    background: url(../img/checkbox_normal.png) no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    background: url(../img/checkbox_on.png) no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+}
+
+input[type="text"].focused,input[type="password"].focused,input[type="email"].focused{
+    outline: 1px solid #dc2727;
+    border: 1px solid transparent;
+}
+
+
+
+
+
+
+
+/*small pc*/
+@media screen and (max-width: 1200px){
+    
+    
+}
+
+
+/* big tablet */
+@media screen and (max-width: 1024px){
+    
+    .join_wrap h2{
+        font-size: 3.75vw;
+    }
+    
+    .join_wrap form{
+        margin-bottom: 64px;
+    }
+}
+
+
+
+
+/* small tablet */
+@media screen and (max-width: 800px){
+    .join_wrap .mt68{
+        margin-top: 30px;
+    }
+    
+}
+
+
+
+
+
+/**/
+@media screen and (max-width: 768px){
+    .join_wrap{
+        width: 100%;
+    }
+    
+    .join_wrap h2{
+        font-size: 30px;
+    }
+    
+    .join_wrap div{
+        height: auto;
+    }
+    
+    .join_wrap div .input160{
+        width: 120px;
+    }
+    
+    .join_wrap div label{
+        width: 22.777vw;
+    }
+    
+    .join_wrap div.phone_num label{
+        width: 100%;
+    }
+    
+    .join_wrap div.birthday label{
+        width: 100%;
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+/* big mobile */
+@media screen and (max-width: 640px){
+    
+    
+    .join_wrap form{
+        margin-bottom: 8.333vw;
+    }
+    
+    .join_wrap div a{
+        margin-left: 10px;
+    }
+    
+    .join_wrap div span.pw_caution{
+        margin-left: 0;
+        display: block;
+    }
+    
+    
+    .join_wrap div .address_box #user_addr{
+        width: 110px;
+    }
+    
+    .join_wrap div .address_box #user_addr2, #addrDetail{
+        width: 90.625vw;
+    }
+    
+    .join_wrap div.phone_num #phoneN1, #phoneN2, #phoneN3{
+        width: 15.625vw;
+    }
+    .join_wrap div.phone_num span{
+        margin:0;
+    }
+    
+    .join_wrap div a{
+        width: 80px;
+    }
+    
+    .agree ul li:nth-child(4){
+        margin-bottom: 19px;
+    }
+    
+    .agree ul li.agree_select{
+        display: block;
+    }
+    
+    
+}
+
+
+
+
+
+/* small mobile */
+@media screen and (max-width: 360px){
+    
+    .join_wrap form{
+        margin-bottom: 30px;
+    }
+    
+    .join_wrap div label {
+        width: 73px;
+    }
+    
+    .join_wrap div.doublePw label{
+        line-height: 1.1;
+    }
+    
+    .join_wrap .add_info div #birthY{
+        width: 90px;
+    }
+    
+    .join_wrap .add_info div #birthM, #birthD{
+        width: 65px;
+    }
+    
+}

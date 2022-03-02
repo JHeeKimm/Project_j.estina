@@ -1,0 +1,522 @@
+/* 제이에스티나 서브 story css */
+
+/*
+font-family: 'IBMPlexSansKR-Regular';
+
+*/
+
+/*
+사용컬러
+#fffafa
+
+#fddfd5
+#ffb2b8
+
+#242423
+#545453
+#828281
+
+#2e3192
+*/
+
+/* 공통 */
+.inner{
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    border: 0px solid blue;
+}
+
+.clearfix:after{
+    display: block;
+    content:"";
+    clear: both;
+}
+
+/* 제이에스티나 스토리 */
+.breadcrumb{
+    padding: 47px 3px;
+    width: 100%;
+}
+
+.breadcrumb > ul > li{
+    float: left;
+    padding-left: 22px;
+    
+}
+
+.breadcrumb > ul > li:first-child{
+    padding-left: 0;
+}
+
+.breadcrumb > ul > li.here_box{
+    background: url(../img/bread_right.png) no-repeat;
+    background-size: 6px;
+    background-position: 9px 3px;
+    position: relative;
+    padding-right: 22px;
+}
+
+.breadcrumb > ul > li.here_box .drop_arrow{
+    background: url(../img/drop_arrow.png) no-repeat;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.breadcrumb ul > li > a{
+    display: block;
+    color: #545453;
+    font-family: 'IBMPlexSansKR-Mideum';
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+
+.breadcrumb ul.drop_menu{
+    background: #fffafa;
+    padding: 6px 6px;
+    border: 1px solid #fddfd5;
+    position: absolute;
+    left: 14px;
+    top: 26px;
+    display: none;
+}
+.breadcrumb ul.drop_menu li{}
+.breadcrumb ul.drop_menu li a{
+    display: block;
+    padding: 0;
+    line-height: 27px;
+}
+
+
+
+.je_story .tit_box{
+    background: url(../img/sub_story.png) #ffb2b8 no-repeat center; 
+    background-size: contain;
+    width: 100%;
+    height: 192px;
+    line-height: 192px;
+    font-size: 44px;
+    font-family: 'IBMPlexSansKR-SemiBold';
+    font-style: italic;
+    color: #fffafa;
+    text-align: center;
+}
+
+.je_story .story_ko, .je_story .story_en{
+    font-size: 18px;
+    font-family: 'IBMPlexSansKR-Regular';
+    line-height: 1.8;
+    padding: 68px 20px;
+}
+
+.je_story .story_ko{
+    position: relative;
+}
+
+.je_story .story_ko:after{
+    content:"";
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #545453;
+    position: absolute;
+    left: 25px;
+    bottom: 0;
+}
+
+
+/* 제이에스티나 연혁 */
+.history{
+    background: #f1f1f1;
+    letter-spacing: -0.01em;
+}
+
+.history .inner{
+    padding: 100px 20px;
+}
+
+.history h2{
+    color: #545453;
+    font-size: 36px;
+    line-height: 1.055;
+    font-family: 'IBMPlexSansKR-Semibold';
+    float: left;
+    width: 158px;
+}
+
+.history .history_tabs{
+    float: left;
+    padding-left: 41px;
+    width: calc(100% - 158px);
+}
+
+.history .history_tabs .on{
+    display: block;
+}
+
+.history_tabs ul.tab_menu li{
+    float: left;
+    width: 33.3333%;
+    transition: all ease .5s;
+    transform: translate(0,-91px);
+    opacity: 0;
+    
+}
+
+.history_tabs ul.tab_menu li a{
+    color: #828281;
+    font-size: 24px;
+    font-family: 'IBMPlexSansKR-Semibold';
+    cursor: pointer;
+    display: block;
+    transition: all ease .5s;
+    padding: 0 31px;
+    margin-top: 80px;
+    position: relative;
+}
+
+
+
+.history_tabs ul.tab_menu li a:before{
+    content: "";
+    display: block;
+    width: 1px;
+    background: #c2c2c2;
+    transition: all ease .5s;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    transform-origin: top;
+}
+
+.history_tabs ul.tab_menu li a:after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #f26572;
+    transition: all ease .5s;
+    position: absolute;
+    left: -7px;
+    top:11px;
+}
+
+.history_tabs ul.tab_menu li:nth-child(1) a:before{
+    height: 100px;
+}
+.history_tabs ul.tab_menu li:nth-child(1) a.active:before{
+    height: 270px;
+}
+
+.history_tabs ul.tab_menu li:nth-child(2) a{
+    margin-top: 100px;
+}
+
+.history_tabs ul.tab_menu li:nth-child(2) a:before{
+    height: 120px;
+}
+
+.history_tabs ul.tab_menu li:nth-child(2) a.active:before{
+    height: 270px;
+}
+
+.history_tabs ul.tab_menu li:nth-child(3) a{
+    margin-top: 120px;
+}
+
+.history_tabs ul.tab_menu li:nth-child(3) a:before{
+    height: 140px;
+}
+
+.history_tabs ul.tab_menu li:nth-child(3) a.active:before{
+    height: 270px;
+}
+
+.history_tabs ul.tab_menu li a.active{
+    color: #242423;
+    font-size: 34px;
+    margin-top: 246px;
+}
+
+
+.history_tabs ul.tab{
+    margin-top: 85px;
+    border-top: 1px solid #545453;
+    display: none;
+}
+
+.history_tabs ul.tab > li{
+    padding: 31px 0 31px 31px;
+    border-top: 1px solid #c2c2c2;
+    
+}
+
+.history_tabs ul.tab > li:first-child{
+    border-top: 0;
+}
+
+.history_tabs ul.tab > li > .year{
+    float: left;
+    color: #242423;
+    font-size: 24px;
+    font-family: 'IBMPlexSansKR-Semibold';
+}
+
+.history_tabs ul.tab > li > ul.txt{
+    float: left;
+    color: #242423;
+    font-size: 18px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.history_tabs ul.tab > li > ul.txt > li{
+    padding: 2px 0 16px 0; 
+}
+
+.history_tabs ul.tab > li > ul.txt > li:last-child{
+    padding-bottom: 0;
+}
+
+.history_tabs ul.tab > li > ul.txt .month{
+    float: left;
+    padding: 2px 50px;
+}
+
+.history_tabs ul.tab > li > ul.txt p{
+    float: left;
+    line-height: 1.25;
+}
+
+
+
+
+
+/*small pc*/
+@media screen and (max-width: 1200px){
+    
+    
+}
+
+
+/* big tablet */
+@media screen and (max-width: 1024px){
+    /* 제이에스티나 스토리 */
+    .breadcrumb{
+        padding: 3.75vw 18px;
+    }
+    
+    .je_story .tit_box{ 
+        height: 18.75vw;
+        line-height: 18.75vw;
+        font-size: 3.75vw;
+    }
+
+    .je_story .story_ko, .je_story .story_en{
+        padding: 6.25vw 18px;
+    }
+    
+    .je_story .story_ko br, .je_story .story_en br{
+        display: none;
+    }
+
+    .je_story .story_ko:after{
+        left: 23px;
+    }
+
+    
+    
+    /* 제이에스티나 연혁 */
+    .history .inner {
+        padding: 64px 15px;
+    }
+    
+    .history h2{
+        float: none;
+        width: 100%;
+        font-size: 3.75vw;
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 1.3;
+    }
+    .history h2 br:first-child{
+        display: none;
+    }
+    
+    .history .history_tabs{
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .history_tabs ul.tab_menu > li:first-child{
+        padding-left: 20px;
+    }
+    
+    .history_tabs ul.tab > li {
+        padding: 20px 0 20px 20px;
+    }
+    
+    .history_tabs ul.tab > li > .year{
+        font-size: 2.5vw;
+    }
+    
+    .history_tabs ul.tab > li > ul.txt .month{
+        padding: 2px 5vw;
+        font-size: 2vw;
+    }
+    
+    .history_tabs ul.tab > li > ul.txt p{
+        font-size: 2vw;
+    }
+    
+    .history_tabs ul.tab_menu li a{
+        font-size: 2.5vw;
+    }
+    
+    .history_tabs ul.tab_menu li a.active{
+        font-size: 3.75vw;
+    }
+}
+
+
+
+
+/* small tablet */
+@media screen and (max-width: 800px){
+    /* 제이에스티나 스토리 */
+    .breadcrumb{
+        padding: 30px 18px;
+    }
+    
+    .je_story .tit_box{ 
+        height: 150px;
+        line-height: 150px;
+        font-size: 30px;
+    }
+    
+    .je_story .story_ko, .je_story .story_en{
+        font-size: 16px;
+        padding: 50px 18px;
+    }
+    
+    
+    /* 제이에스티나 연혁 */
+    
+    .history h2{
+        font-size: 30px;
+    }
+    
+    .history_tabs ul.tab{
+        margin-top: 60px;
+    }
+    
+    .history_tabs ul.tab > li > .year{
+        font-size: 20px;
+    }
+    
+    .history_tabs ul.tab > li > ul.txt .month{
+        padding: 2px 40px;
+        font-size: 16px;
+    }
+    
+    .history_tabs ul.tab > li > ul.txt p{
+        font-size: 16px;
+    }
+    
+    .history_tabs ul.tab_menu li a{
+        font-size: 20px;
+    }
+    
+    .history_tabs ul.tab_menu li a.active{
+        font-size: 30px;
+    }
+    
+}
+
+
+
+
+
+/**/
+@media screen and (max-width: 768px){
+    
+    
+}
+
+
+
+
+
+/* big mobile */
+@media screen and (max-width: 640px){
+    /* 제이에스티나 스토리 */
+    .breadcrumb ul > li > a{
+        font-size: 13px;
+    }
+    
+    .je_story .story_ko, .je_story .story_en{
+        padding: 8.333vw 18px;
+    }
+    
+    
+    /* 제이에스티나 연혁 */
+    .history .inner {
+        padding: 8.333vw 10px;
+    }
+    
+    .history h2{
+        margin-bottom: 30px;
+    }
+    
+    .history_tabs ul.tab{
+        margin-top: 40px;
+    }
+    
+    .history_tabs ul.tab > li {
+        padding: 2.777vw 0 2.777vw 2.777vw;
+    }
+    
+    .history_tabs ul.tab > li > .year{
+        float: none;
+    }
+    
+    .history_tabs ul.tab > li > ul.txt{
+        float: none;
+    }
+    
+    .history_tabs ul.tab > li > ul.txt > li{
+        padding: 7px 0 5px 2px;
+    }
+    
+    .history_tabs ul.tab > li > ul.txt .month{
+        padding: 2px 5px 2px 0;
+    }
+}
+
+
+
+
+
+/* small mobile */
+@media screen and (max-width: 360px){
+    /* 제이에스티나 스토리 */
+    .je_story .story_ko, .je_story .story_en{
+        padding: 30px 18px;
+    }
+    
+    
+    /* 제이에스티나 연혁 */
+    .history .inner {
+        padding: 30px 10px;
+    }
+    
+    .history_tabs ul.tab > li {
+        padding: 10px 0 10px 10px;
+    }
+    
+}
